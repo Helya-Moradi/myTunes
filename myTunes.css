@@ -1,0 +1,286 @@
+@font-face {
+    font-family: PTSans;
+    src: url(font/PTSans-Bold.ttf);
+    src: url(font/PTSans-BoldItalic.ttf);
+    src: url(font/PTSans-Italic.ttf);
+    src: url(font/PTSans-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: PTSans;
+    text-decoration: none;
+    line-height: 1.4em;
+}
+
+.menu {
+    background-color: rgb(54, 55, 56);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a {
+    color: white;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    padding: 11px 10px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(78, 78, 80);
+}
+
+.showcase {
+    background: rgb(54, 55, 56) url(img/showcase.jpeg) no-repeat center/cover;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.showcase h1 {
+    font-size: 65px;
+}
+
+.showcase h2 {
+    font-size: 32px;
+    margin: 30px;
+}
+
+.showcase p {
+    font-size: 20px;
+}
+
+.sec-head {
+    background-color: #252529;
+    color: white;
+    /* height: 170vh; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+.sec-head i {
+    font-size: 43px;
+    display: inline;
+    padding: 5px;
+}
+
+.sec-head h1 {
+    font-size: 40px;
+    display: inline;
+}
+
+.sec-head h2 {
+    font-size: 32px;
+    margin: 32px 0;
+}
+
+.sec-head p:first-of-type {
+    font-size: 20px;
+}
+
+.sec-head .btn {
+    color: white;
+    background-color: rgb(187, 1, 1);
+    padding: 15px 18px;
+    margin: 25px 0;
+}
+
+.sec-head .btn:hover {
+    background-color: rgb(226, 19, 19);
+}
+
+.sec-head p:last-of-type {
+    font-size: 15px;
+}
+
+.sec-head div img {
+    width: 100%;
+    /* height: 650px; */
+    margin: 20px 0;
+}
+
+.sub-sec {
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 58px;
+}
+
+.sub-sec h1 {
+    font-size: 32px;
+}
+
+.sub-sec p {
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.sub-sec .btn- {
+    background-color: rgb(39, 39, 116);
+    color: white;
+    padding: 15px;
+}
+
+.sub-sec .btn-:hover {
+    background-color: rgb(62, 72, 165);
+}
+
+.sub-sec img {
+    width: 100%;
+}
+
+.section {
+    background: #252529 url(img/section-bg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.section h1 {
+    font-size: 32px;
+    margin: 35px;
+
+}
+
+.section p {
+    font-size: 22px;
+}
+
+.subsection {
+    background-color: #f4f4f4;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.subsection img {
+    width: 100%;
+}
+
+.subsection div {
+    margin: 23px;
+}
+
+.subsection div h3 {
+    font-size: 25px;
+}
+
+.subsection div p:first-of-type {
+    margin: 20px 0;
+}
+
+.subsection div a {
+    color: black;
+    display: block;
+    border-top: 1px solid rgb(22, 22, 22);
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.foot-menu {
+    background-color: #252529;
+    color: white;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-menu ul {
+    list-style: none;
+}
+
+.foot-menu a {
+    color: rgb(202, 202, 202);
+    font-size: 14px;
+}
+
+.foot-menu li:first-child {
+    font-size: 20px;
+    width: 225px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(75, 75, 75);
+}
+
+.foot-menu li:nth-child(2) {
+    padding-top: 10px;
+}
+
+.copyright {
+    background-color: rgb(54, 55, 56);
+    color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (max-width:950px) {
+    .subsection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .foot-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:516px) {
+    .showcase {
+        height: 50vh;
+    }
+
+    .showcase h1 {
+        font-size: 44px;
+    }
+
+    .showcase h2 {
+        font-size: 22px;
+    }
+
+    .showcase p {
+        display: none;
+    }
+
+    .menu {
+        /* height: 26vh; */
+        height: auto;
+        position: static;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        width: 100vw;
+        border-bottom: 1px solid rgb(78, 78, 80);
+    }
+}
